@@ -1,0 +1,117 @@
+.cartoon {
+  --skin: #ffd8aa;
+  --color: #000;
+  --line-width: 0.6vmin;
+  --neck: #fff;
+  --dress: #d00;
+  color: var(--color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vmin;
+  height: 80vmin;
+
+}
+
+.cartoon div {
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.b {
+  border: var(--line-width) solid;
+}
+
+.r {
+  border-radius: 100%;
+}
+
+.hb::before,
+.ha::after {
+  content: "";
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.arms {
+  width: 30%;
+  height: 20%;
+  top: 56%;
+  left: 19.6%;
+  background: var(--dress);
+}
+
+.arms::after {
+  width: 100%;
+  height: 100%;
+  border-radius: 100% 110% 60% 100% / 100%;
+  border: var(--line-width) solid;
+  left: 84%;
+  top: 5%;
+  background: var(--dress);
+}
+
+.shoe {
+  width: 26%;
+  height: 20.5%;
+  border-radius: 90% 120% 0 0;
+  top: 83.5%;
+  left: 21%;
+  overflow: hidden;
+}
+
+.shoe + .shoe {
+  height: 19%;
+  width:25%;
+  top: 84%;
+  left: 43%;
+  transform: scaleX(-1);
+  border-radius: 90% 120% 40% 60%;
+}
+
+.shoe::before {
+  width: 130%;
+  left: -24%;
+  top: -30%;
+  height: 80%;
+  border-radius: 50%;
+  background: var(--color);
+}
+
+.shoe::after {
+  width: 50%;
+  height: 45%;
+  border-radius: 0 100% 0% 100%;
+  background: #ccc;
+  transform: scaleX(-1) rotate(-34deg);
+  left: 20%;
+  top: -3%;
+}
+
+.shoe + .shoe::after {
+  width: 52%;
+  transform: scaleX(-1) rotate(-30deg);
+}
+
+
+.pompom {
+  width: 4%;
+  height: 4%;
+  border-top-width: 0.75vmin;
+  background: var(--dress);
+  left: 21%;
+  top: 85%;
+}
+
+.pompom::after {
+  width: 120%;
+  height: 130%;
+  border: var(--line-width) solid;
+  background: var(--dress);
+  border-radius: 100%;
+  left: 1700%;
+  top: -20%;
+}
+
