@@ -1,0 +1,76 @@
+
+.cartoon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .cartoon div {
+    position: absolute;
+    box-sizing: border-box;
+  }
+  
+  .b {
+    border: 1vmin solid black;
+  }
+  
+  .r {
+    border-radius: 100%;
+  }
+  
+  .hb::before,
+  .ha::after {
+    content: "";
+    display: block;
+    position: absolute;
+  }
+  
+  /****/
+  .cartoon {
+    --skin: #fca;
+    --dark: #e96;
+    --hair: #630;
+    --robe: #222;
+    width: 80vmin;
+    height: 80vmin;
+  }
+  
+  .cartoon::after {
+    width: 120%;
+    bottom: 0;
+    border-top: 1vmin solid black;
+    left: 50%;
+    transform: translate(-50%, 25%);
+  }
+  
+  
+ 
+  .hand {
+    width: 15%;
+    height: 15%;
+    top: 69%;
+    left: 12%;
+    background: var(--skin);
+  }
+  
+  .hand + .hand {
+    left: 73%;
+  }
+  
+  .shoe {
+    width: 28%;
+    left: 20.5%;
+    height: 9%;
+    bottom: 0;
+    border-radius: 200% 90% 0 5% / 400% 0 0 0;
+    background: var(--robe);
+  }
+  
+  .shoe + .shoe {
+    left: auto;
+    right: 20.5%;
+    border-radius: 90% 200% 5% 0% / 0 400% 0 0;
+  }
+  
+ 
